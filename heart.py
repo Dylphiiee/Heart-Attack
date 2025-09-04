@@ -450,14 +450,6 @@ def network_tools():
 # Main
 def main():
     show_banner()
-    
-    # Check if running in Termux
-    if is_termux():
-        print(f"{Colors.GREEN}✅ Running in Termux environment{Colors.END}")
-    else:
-        print(f"{Colors.YELLOW}⚠️ Not running in Termux - some features may not work{Colors.END}")
-    
-    install_dependencies()
 
     while True:
         show_banner()
