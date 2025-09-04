@@ -510,9 +510,9 @@ def main():
         show_banner()
         print(f"{Colors.CYAN}Select option:{Colors.END}")
         print(f"{Colors.YELLOW}1. WebAttack 🌐{Colors.END}")
-        print(f"{Colors.YELLOW}3. Exit 🚪{Colors.END}")
+        print(f"{Colors.YELLOW}2. Exit 🚪{Colors.END}")
 
-        choice = input(f"{Colors.GREEN}🎯 Select option (1-3): {Colors.END}")
+        choice = input(f"{Colors.GREEN}🎯 Select option (1-2): {Colors.END}")
         if choice == "1":
             web_attack()
         elif choice == "2":
