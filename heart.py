@@ -120,7 +120,6 @@ def http_flood_enhanced(target, port, duration, threads):
     ]
 
     def send_requests():
-        nonlocal request_count, success_count, failed_count
         while attack_running and time.time() < end_time:
             try:
                 # Create a new socket for each request to avoid connection reuse
