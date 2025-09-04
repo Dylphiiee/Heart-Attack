@@ -97,8 +97,7 @@ web_attack() {
         echo -e "${YELLOW}===============================================${NC}"
         read -p "Select option [1-6]: " web_choice
 
-        case $web_choice in
-            1)
+        case $web_choice in 1
                 read -p "Enter target URL/IP: " target
                 read -p "Enter port (default 80): " port
                 read -p "Enter duration (seconds): " duration
